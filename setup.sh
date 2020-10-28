@@ -9,7 +9,7 @@ YELLOW='\033[01;33m'
 CYAN='\033[01;36m'                                           
 echo -e "        ${CYAN}This is bash scrpting"
 echo -e "This script will install all dependences for notebook"
-echo-e "${RED}instaling clang for c/c++"
+echo -e "${RED}instaling clang for c/c++"
 echo -e "\e[0m"
 apt install clang
 echo -e "${RED} installing python "
