@@ -41,6 +41,6 @@ pip install jupyter
 echo -e "${RED}Testing notebook"
 echo -e "${YELLOW}If notebook launched sucess you can see some thing like this ${CYAN}To access the notebook, openlike this file in a browser:"
 echo -e "\e[0m"
-cls
+clear
 jupyter notebook
     
