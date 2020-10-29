@@ -1,7 +1,7 @@
 RED='\033[01;31m'
 echo -e "${RED} Updating and upgrading"
 echo -e "\e[0m"
-pkg update && pkg upgrade
+pkg update -y && pkg upgrade -y
 pkg install figlet
 echo -e "${RED} Bash Code By DSB"
 figlet RYU CODER
