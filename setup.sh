@@ -40,7 +40,7 @@ echo -e "${RED}installing main freetype"
 apt install freetype -y
 echo -e "${RED}Upgarding pip to latest verson"
 echo -e "\e[0m"
-pip install --upgrade pip -y
+pip install --upgrade pip 
 echo -e "${RED}Installing pkg config "
 echo -e "\e[0m"
 apt install pkg-config -y
@@ -52,10 +52,10 @@ echo -e "\e[0m"
 LDFLAGS="-lm -lcompiler_rt" 
 echo -e "${RED}installing jupyter notebook"
 echo -e "\e[0m"
-pip install jupyter -y
+pip install jupyter 
 echo -e "${RED}Testing notebook"
 echo -e "${YELLOW}If notebook launched sucess you can see some thing like this ${CYAN}To access the notebook, openlike this file in a browser:"
 echo -e "\e[0m"
 clear
-jn
+jupyter notebook
 
