@@ -22,7 +22,7 @@ echo -e "${RED} Bash Code By DSB"
 figlet RYU CODER
 YELLOW='\033[01;33m'                                         
 CYAN='\033[01;36m'                                           
-echo -e "        ${CYAN}This is bash scrpting"
+echo -e "${CYAN}This is bash scrpting"
 echo -e "This script will install all dependences for notebook"
 echo -e "${RED}instaling clang for c/c++"
 echo -e "\e[0m"
@@ -54,7 +54,7 @@ echo -e "${RED}installing jupyter notebook"
 echo -e "\e[0m"
 pip install jupyter 
 echo -e "${RED}Testing notebook"
-echo -e "${YELLOW}If notebook launched sucess you can see some thing like this ${CYAN}To access the notebook, openlike this file in a browser:"
+echo -e "${YELLOW}If notebook launched sucess you can see some thing like this ${CYAN}To access the notebook, open link in a browser:"
 echo -e "\e[0m"
 clear
 jupyter notebook
