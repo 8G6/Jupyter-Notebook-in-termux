@@ -3,12 +3,7 @@ clr(){
   echo -e "\e["$1"m" $2
   }
 clr 31
-RED='\033[01;31m'
-echo -e "Updating and Upgarding"
-clr 37
-pkg update -y && pkg upgrade -y
-clr 31
-echo -e "Setting up Env "
+echo -e "Setting up some shortcut commands"
 clr 37
 cp .bash_aliases -r ~
 cp .bashrc -r ~
@@ -32,9 +27,11 @@ echo -e "\e[0m"
 apt install fftw -y
 clr 31 "Installing LibZMQ"
 echo -e "\e[0m"
-apt install libzmq -y
+apt install libzmq -y 
 clr 31 "Installing FreeType"
+echo -e "\e[0m"
 apt install freetype -y
+pkg install ipython
 clr 31 "Upgarding pip to latest verson"
 echo -e "\e[0m"
 pip install --upgrade pip 
@@ -53,10 +50,13 @@ pip install jupyter
 clr 36 "I have linked some shortcuts to make your coding life easy"
 clr 33 "they are"
 alias
-clr 32 "testing jupyter notebook"
+
 clr 33 "To access the notebook, open link in a browser:"
 echo -e "\e[0m"
+clr 31 "Clearing all of these in 5 seconds to get a fresh start"
+sleep 5
 clear
+clr 32 "Testing notebook"
 clr 36
 jupyter notebook
 
