@@ -2,8 +2,15 @@
 clr(){
   echo -e "\e["$1"m" $2
   }
-#The C or cpp funtion inputs your file name and returns the oputput
-
+clr-help(){
+clr 31 31:Red
+clr 32 32:Green
+clr 33 33:Yellow
+clr 34 34:Blue
+clr 35 35:Pink
+clr 36 36:Cyan
+clr 37 37:Gray
+}
 #alias sets a new cammand
 #Enter alias for listing all alias
 alias cmd="nano ~/.bash_aliases"
@@ -12,8 +19,6 @@ alias up="pkg update && pkg upgrade"
 alias c="clear"
 alias rm="rm -i"
 alias rf="rm -rf"
-alias C="C"
-alias cpp="cpp"
 alias lsf="ls | grep $1"
 alias pkf="pkg list-all | grep $1"
 alias pkl="pkg list-all"
