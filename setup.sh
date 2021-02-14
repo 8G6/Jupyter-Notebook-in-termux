@@ -14,48 +14,49 @@ cp .bash_aliases -r ~
 cp .bashrc -r ~
 source ~/.bashrc
 clr 37
-echo -e "${RED} Updating and upgrading"
+clr 31 "updating and upgrading to eliminate any possible errors regarding versons"
 echo -e "\e[0m"
 pkg update -y && pkg upgrade -y
 pkg install figlet
-echo -e "${RED} Bash Code By DSB"
-figlet RYU CODER
-YELLOW='\033[01;33m'                                         
-CYAN='\033[01;36m'                                           
-echo -e "${CYAN}This is bash scrpting"
-echo -e "This script will install all dependences for notebook"
-echo -e "${RED}instaling clang for c/c++"
+clr 32 "Bash Code By DSB"
+figlet RYU CODER                                           
+clr 32 "This script will install all dependences for notebook"
+clr 31 "instaling clang for c/c++"
 echo -e "\e[0m"
 apt install clang -y
-echo -e "${RED} installing python "
+clr 31 "installing Python "
 echo -e "\e[0m"
 apt install  python -y
-echo -e "${RED}installing fftw"
+clr 31 "installing FFTW"
 echo -e "\e[0m"
 apt install fftw -y
-echo -e "${RED}installing main lib"
+clr 31 "Installing LibZMQ"
 echo -e "\e[0m"
 apt install libzmq -y
-echo -e "${RED}installing main freetype"
+clr 31 "Installing FreeType"
 apt install freetype -y
-echo -e "${RED}Upgarding pip to latest verson"
+clr 31 "Upgarding pip to latest verson"
 echo -e "\e[0m"
 pip install --upgrade pip 
-echo -e "${RED}Installing pkg config "
+clr 31 "Installing pkg config "
 echo -e "\e[0m"
 apt install pkg-config -y
-echo -e "${RED}installing png libray"
+clr 31 "installing PNG libray"
 echo -e "\e[0m"
 apt install libpng -y
-echo -e "${RED}Setting up env"
+clr 31 "Setting up Environment"
 echo -e "\e[0m"
 LDFLAGS="-lm -lcompiler_rt" 
-echo -e "${RED}installing jupyter notebook"
+clr 31 "Installing Jupyter"
 echo -e "\e[0m"
 pip install jupyter 
-echo -e "${RED}Testing notebook"
-echo -e "${YELLOW}If notebook launched sucess you can see some thing like this ${CYAN}To access the notebook, open link in a browser:"
+clr 36 "I have linked some shortcuts to make your coding life easy"
+clr 33 "they are"
+alias
+clr 32 "testing jupyter notebook"
+clr 33 "To access the notebook, open link in a browser:"
 echo -e "\e[0m"
 clear
+clr 36
 jupyter notebook
 
