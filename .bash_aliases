@@ -27,5 +27,6 @@ alias ppi="pip install $1"
 alias ati="apt install $1"
 alias ati="apt install $1"
 alias jn="jupyter notebook"
+c
 clr 32
 
