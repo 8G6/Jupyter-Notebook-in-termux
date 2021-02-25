@@ -16,45 +16,27 @@ pkg install figlet
 clr 32 "Bash Code By DSB"
 figlet RYU CODER                                           
 clr 32 "This script will install all dependences for notebook"
-clr 31 "instaling clang for c/c++"
 echo -e "\e[0m"
-apt install clang -y
-clr 31 "installing Python "
-echo -e "\e[0m"
-apt install  python -y
-clr 31 "installing FFTW"
-echo -e "\e[0m"
-apt install fftw -y
-clr 31 "Installing LibZMQ"
-echo -e "\e[0m"
-apt install libzmq -y 
-clr 31 "Installing FreeType"
-echo -e "\e[0m"
-apt install freetype -y
-pkg install ipython
-clr 31 "Upgarding pip to latest verson"
-echo -e "\e[0m"
-pip install --upgrade pip 
-clr 31 "Installing pkg config "
-echo -e "\e[0m"
-apt install pkg-config -y
-clr 31 "installing PNG libray"
-echo -e "\e[0m"
-apt install libpng -y
+pkg update -y && pkg upgrade -y
+pkg install clang python fftw libzmq freetype libpng pkg-config libcrypt -y
 clr 31 "Setting up Environment"
 echo -e "\e[0m"
 LDFLAGS="-lm -lcompiler_rt" 
 clr 31 "Installing Jupyter"
 echo -e "\e[0m"
+pip install --upgrade pip
 pip install jupyter 
 clr 36 "I have linked some shortcuts to make your coding life easy"
 clr 33 "they are"
 alias
-
 clr 33 "To access the notebook, open link in a browser:"
 echo -e "\e[0m"
-clr 31 "Clearing all of these in 5 seconds to get a fresh start"
-sleep 5
+clr 31 "Clearing all of these in 10 seconds to get a fresh start"
+for i in $(seq 1 1 5)
+do
+  echo 10-&i "seconds left to clear"
+  sleep(2)
+done
 clear
 clr 32 "Testing notebook"
 clr 36
