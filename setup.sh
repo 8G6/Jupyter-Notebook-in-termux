@@ -11,14 +11,16 @@ source ~/.bashrc
 clr 37
 clr 31 "updating and upgrading to eliminate any possible errors regarding versons"
 echo -e "\e[0m"
-pkg update -y && pkg upgrade -y
-pkg install figlet
+yes | pkg update
+yes | pkg upgrade 
+yes | pkg install figlet
 clr 32 "Bash Code By DSB"
 figlet RYU CODER                                           
 clr 32 "This script will install all dependences for notebook"
 echo -e "\e[0m"
-pkg update -y && pkg upgrade -y
-pkg install clang python fftw libzmq freetype libpng pkg-config libcrypt -y
+yes | pkg update
+yes | pkg upgrade
+yes | pkg install clang python fftw libzmq freetype libpng pkg-config libcrypt -y
 clr 31 "Setting up Environment"
 echo -e "\e[0m"
 LDFLAGS="-lm -lcompiler_rt" 
