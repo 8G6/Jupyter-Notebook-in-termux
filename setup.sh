@@ -34,7 +34,10 @@ alias
 clr 33 "To access the notebook, open link in a browser:"
 echo -e "\e[0m"
 clr 31 "Clearing all of these in 10 seconds to get a fresh start"
-sleep(10) 
+for ((i = 1 ; i < 11 ; i++)); do
+        echo $i "Seconds left"
+        sleep 1
+done
 clear
 clr 32 "Testing notebook"
 clr 36
