@@ -37,8 +37,8 @@ clr 31 "Clearing all of these in 10 seconds to get a fresh start"
 for i in $(seq 1 1 5)
 do
   echo 10-&i "seconds left to clear"
-  sleep(2)
 done
+sleep(10) 
 clear
 clr 32 "Testing notebook"
 clr 36
